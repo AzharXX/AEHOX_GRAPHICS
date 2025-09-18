@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aehox Graphics - Creative Graphic Designer & Visual Artist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="container">
+            <div class="nav-brand">
+                <h2>Aehox Graphics</h2>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Aehox Graphics</h1>
+                <p class="hero-subtitle">Creative Graphic Designer & Visual Artist</p>
+                <p class="hero-description">Transforming ideas into stunning visual experiences through innovative design solutions</p>
+                <a href="#portfolio" class="btn btn--primary btn--lg hero-cta">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I'm a passionate graphic designer with expertise in creating compelling visual identities, gaming assets, and digital graphics. With a keen eye for detail and a deep understanding of design principles, I help brands and individuals stand out in the digital landscape.</p>
+                    <p>My work spans across various platforms from Twitch streaming graphics to corporate branding, always focusing on delivering high-quality designs that resonate with the target audience.</p>
+                    
+                    <div class="skills">
+                        <h3>Skills & Expertise</h3>
+                        <div class="skills-grid" id="skillsGrid"></div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>Professional Photo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Branding">Branding</button>
+                <button class="filter-btn" data-filter="Logos">Logos</button>
+                <button class="filter-btn" data-filter="Social Media">Social Media</button>
+                <button class="filter-btn" data-filter="Banners">Banners</button>
+            </div>
+            <div class="portfolio-grid" id="portfolioGrid"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid" id="servicesGrid"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="testimonials-grid" id="testimonialsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Ready to bring your vision to life? Let's discuss your project and create something amazing together.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <a href="mailto:aehox.graphics@gmail.com">aehox.graphics@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Response Time:</strong>
+                            <span>Usually responds within 24 hours</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-link" target="_blank">
+                                <span>Instagram: @aehox_python</span>
+                            </a>
+                            <a href="#" class="social-link" target="_blank">
+                                <span>Upwork: Aehox Graphics</span>
+                            </a>
+                            <a href="#" class="social-link" target="_blank">
+                                <span>GitHub: aehox</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="projectType" class="form-label">Project Type</label>
+                            <select id="projectType" name="projectType" class="form-control">
+                                <option value="">Select a service</option>
+                                <option value="logo">Logo Design</option>
+                                <option value="branding">Twitch/Gaming Branding</option>
+                                <option value="social">Social Media Graphics</option>
+                                <option value="banner">Banner Design</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Aehox Graphics</h3>
+                    <p>Creative solutions for your visual needs</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>aehox.graphics@gmail.com</p>
+                    <p>Available for freelance projects</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aehox Graphics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modal -->
+    <div class="modal hidden" id="portfolioModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="image-placeholder" id="modalImagePlaceholder">
+                        <span id="modalImageText">Portfolio Item</span>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalTitle">Portfolio Item</h3>
+                    <p class="modal-category" id="modalCategory">Category</p>
+                    <p id="modalDescription">Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
